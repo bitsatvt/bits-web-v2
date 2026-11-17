@@ -1,5 +1,6 @@
 export interface Project {
     id: number;
+    slug: string;
     name: string;
     description: string;
     technologies: string[];
@@ -12,6 +13,7 @@ export interface Project {
 export const projects: Project[] = [
     {
         id: 1,
+        slug: "drone-e-commerce",
         name: "Drone E-Commerce",
         description: "Bespoke 3D drone customization platform for Unmanned Industries with inventory logic and real-time 3D rendering.",
         technologies: ["Next.js", "PostgreSQL", "Three.js"],
@@ -22,6 +24,7 @@ export const projects: Project[] = [
     },
     {
         id: 2,
+        slug: "odysseus-advisor",
         name: "Odysseus Advisor",
         description: "Virginia Tech course recommendations using official grade distribution and crowdsourced data.",
         technologies: ["Next.js", "Python", "GCP"],
@@ -32,6 +35,7 @@ export const projects: Project[] = [
     },
     {
         id: 3,
+        slug: "turing-note",
         name: "Turing Note",
         description: "iOS app for programmers' notes with code snippets, sketches, and syntax highlighting.",
         technologies: ["SwiftUI", "iOS 18", "PencilKit"],
@@ -42,6 +46,7 @@ export const projects: Project[] = [
     },
     {
         id: 4,
+        slug: "stepfree",
         name: "StepFree",
         description: "Accessible transit route navigation helping mobility-impaired users find routes in major cities.",
         technologies: ["React", "Mapbox", "Flask"],
@@ -52,6 +57,7 @@ export const projects: Project[] = [
     },
     {
         id: 5,
+        slug: "studyguido",
         name: "StudyGuido",
         description: "AI study assistant using RAG to generate flashcards and quizzes from uploaded textbooks.",
         technologies: ["React", "LLMs", "Python"],
@@ -62,6 +68,7 @@ export const projects: Project[] = [
     },
     {
         id: 6,
+        slug: "marketmoves",
         name: "MarketMoves",
         description: "Educational paper trading application with risk analysis and gamification features.",
         technologies: ["React", "FastAPI", "MongoDB"],
