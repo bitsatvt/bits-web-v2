@@ -1,92 +1,71 @@
 .projectsPage {
     min-height: 100vh;
-    background: #f5f7fc;
+    background: #f7f8fc;
     color: #20263b;
-    padding: 40px 34px;
+    padding: 64px 34px 80px;
 }
 
 .hero {
-    background: linear-gradient(110deg, #edf0fa, #f8f9fd);
-    padding: 40px 34px;
-    border-bottom: 1px solid #e0e5f0;
-    margin-bottom: 30px;
+    max-width: 1120px;
+    margin: 0 auto 42px;
+    padding: 0 0 28px;
+    border-bottom: 1px solid #e3e7f0;
 }
 
 .eyebrow {
-    font-size: 10px;
-    color: #8792b5;
-    font-weight: 600;
-    margin-bottom: 13px;
+    margin-bottom: 12px;
+    color: #6876ad;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
 }
 
 .hero h1 {
-    font-size: 32px;
-    font-weight: 700;
     margin-bottom: 12px;
+    font-size: clamp(34px, 5vw, 48px);
+    line-height: 1.1;
+    font-weight: 750;
+    letter-spacing: -0.035em;
 }
 
 .description {
-    max-width: 650px;
-    color: #59658c;
-    font-size: 14px;
+    max-width: 620px;
+    color: #626d89;
+    font-size: 15px;
     line-height: 1.7;
 }
 
 .projectsSection {
-    padding: 0 0 30px;
+    max-width: 1120px;
+    margin: 0 auto;
 }
 
 .sectionHeader {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
+    align-items: baseline;
     gap: 12px;
+    margin-bottom: 18px;
 }
 
 .sectionHeader h2 {
-    font-size: 13px;
-    font-weight: 650;
+    font-size: 17px;
+    font-weight: 700;
 }
 
 .sectionHeader span {
-    color: #8792b5;
-    font-size: 10px;
+    color: #8992a9;
+    font-size: 12px;
 }
 
 .projectsGrid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 14px;
+    gap: 16px;
 }
-
-.summary {
-    margin-top: 20px;
-    color: #8792b5;
-    font-size: 11px;
-}
-
-/* Tablet and mobile */
 
 @media (max-width: 768px) {
-    .projectsPage {
-        padding: 20px 16px;
-    }
-
-    .hero {
-        padding: 28px 20px;
-    }
-
-    .hero h1 {
-        font-size: 28px;
-    }
-
-    .projectsGrid {
-        grid-template-columns: 1fr;
-    }
-
-    .sectionHeader {
-        align-items: flex-start;
-        flex-direction: column;
-    }
+    .projectsPage { padding: 38px 18px 56px; }
+    .hero { margin-bottom: 30px; }
+    .projectsGrid { grid-template-columns: 1fr; }
 }
