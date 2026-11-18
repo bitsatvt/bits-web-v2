@@ -72,3 +72,14 @@ a {
   font-size: 1rem; /* Remember to change this once logo gets added */
   cursor: pointer;
 }
+
+.site-footer {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr 2fr;
+
+  padding: 4rem 5rem;
+  margin-top: 4rem;
+
+  background-color: grey;
+  border-radius: 80px 80px 0 0;
+}
